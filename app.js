@@ -29,9 +29,6 @@ app.use(function (req, res, next) {
 
 app.post('/send', function (req, res) {
 
-    res.setHeader('Content-Type', 'text/html');
-    res.end('<h1>Hello World</h1>');
-
   let senderName = req.body.contactFormName;
   let senderEmail = req.body.contactFormEmail;
   let messageSubject = req.body.contactFormSubjects;
